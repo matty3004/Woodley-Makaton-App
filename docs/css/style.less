@@ -1,0 +1,178 @@
+@headingtext:center;
+@buttoncolor:#333;
+@navcolor:#f2f2f2;
+
+h1{
+    text-align: @headingtext;
+}
+
+h2{
+    text-align: @headingtext;
+    text-decoration: underline;  
+}
+
+
+p{
+    text-align: @headingtext;
+    padding: 20px;
+}
+
+/*Column Styling*/
+.row-centered {
+    text-align:@headingtext;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align:left;
+    margin-right:-4px;
+}
+
+
+/*Video Styling*/
+
+.video_content{
+    text-align: @headingtext;
+    padding:1em;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/*Search Styling*/
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 2px 12px 5px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 78%;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*Back Button Styling*/
+
+button.back_button
+{
+    background-color: @buttoncolor;
+    display: inline;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*Nav Styling*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: @buttoncolor;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: inline-block;
+    color: @navcolor;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:780px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:780px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+/*Footer Styling*/
+
+
+
+.page-footer{
+	width:100%;
+	height:100px;
+	bottom:0;
+	left:0;
+}
+
+ul.page-footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: @buttoncolor;
+}
+
+ul.page-footer li {
+    display: inline-block;
+text-align:center;
+
+}
+
+ul.page-footer li a {
+    display: inline-block;
+    color: @navcolor;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 15px;
+}
+ul.page-footer li a:hover {background-color: #555;}
+
+
+
+
+
+
