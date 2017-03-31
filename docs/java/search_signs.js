@@ -9,7 +9,7 @@ $(document).ready(function(){
   $('#state').val('');
   var searchField = $('#search').val();
   var expression = new RegExp(searchField, "i");
-  $.getJSON('data/data.json', function(data) {
+  $.getJSON('../data/data.json', function(data) {
    $.each(data, function(key, value){
     if (value.name.search(expression) != -1 || value.link.search(expression) != -1)
     {
