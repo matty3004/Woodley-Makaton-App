@@ -6,16 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="../css/style.css" />
   <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+  <script src="../java/jquery-3.2.0.min.js"></script>
   <script src="../java/nav_bar.js"></script>
+  <script src="../java/fav.js"></script>
 </head>
 
 <body>
 <header class="header">
-  <button class="back_button" onclick="goBack()">Go Back</button>
    <nav id="nav" class="main_nav">
     <ul class="topnav" id="myTopnav">
+  <li><button class="back_button" onclick="goBack()">&larr;</button></li>
   <li><a href="../index.html">Home</a></li>
   <li><a href="../menu/signs.html">Signs</a></li>
+  <li><a href="../menu/favourites.html">Favourites</a></li>
   <li><a href="../menu/further_info.html">Further Info</a></li>
   <li><a href="../menu/about.html">About</a></li>
   <li class="icon">
@@ -23,8 +26,7 @@
   </li>
 </ul>
    </nav>
-<input type="text" name="search" placeholder="Search for Signs here...">
-<input type="submit">
+
 </header><!-- end of header-->
 
 <div class="row row-centered">
@@ -40,7 +42,10 @@
 </video>
 </div>
 </div>
-
+<p id="sign4">
+<button class="addFavourites">Add To Favourites</button>
+<button class="removeFavourites">Remove from Favourites</button>
+</p>
 
 <footer class="footer">
 

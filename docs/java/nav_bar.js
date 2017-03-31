@@ -11,3 +11,8 @@ function myFunction() {
 function goBack() {
     window.history.back();
 }
+
+function gotoPage() {
+    window.location.href = "http://localhost:8080/signs_pages/hello.html";
+}
+

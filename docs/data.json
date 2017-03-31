@@ -1,0 +1,28 @@
+[
+  {
+    "name":"Hello",
+    "link": "../signs_pages/hello.html",
+    "image": "../media/image/makaton_signs/hello.svg"
+  },
+  {
+    "name":"World",
+    "link": "../signs_pages/world.html",
+    "image": "../media/image/makaton_signs/world.svg"
+  },
+  {
+    "name":"Home",
+    "link": "../signs_pages/home.html",
+    "image": "../media/image/makaton_signs/home.svg"
+  },
+  {
+    "name":"Please",
+    "link": "../signs_pages/please.html",
+    "image": "../media/image/makaton_signs/please.svg"
+  },
+  {
+    "name":"Good",
+    "image": "../media/image/makaton_signs/good.svg",
+    "link": "../signs_pages/good.html"
+  }
+  
+]

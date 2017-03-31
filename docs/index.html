@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<script src="java/jquery-3.2.0.min.js"></script>
+  <script src="java/search_signs.js"></script>
   <script src="java/nav_bar.js"></script>
 </head>
 
@@ -15,6 +17,7 @@
     <ul class="topnav" id="myTopnav">
   <li><a href="index.html">Home</a></li>
   <li><a href="menu/signs.html">Signs</a></li>
+  <li><a href="menu/favourites.html">Favourites</a></li>
   <li><a href="menu/further_info.html">Further Info</a></li>
   <li><a href="menu/about.html">About</a></li>
   <li class="icon">
@@ -22,9 +25,19 @@
   </li>
 </ul>
    </nav>
-<input type="text" name="search" placeholder="Search for Signs here...">
-<input type="submit">
-</header><!-- end of header-->
+   
+
+</header>
+
+<input type="text" name="search" id="search" placeholder="Search for Signs here..." class="form-control" />
+
+<input type="submit" onclick="gotoPage()">
+  <ul class="list-group" id="result"></ul>
+  <br>
+    <br>
+      <br>
+
+<!-- end of header-->
 
 <div class="container">
 <div class="row row-centered">
@@ -64,11 +77,8 @@
     <img src="media/image/makaton_hand.png" class="img-responsive" alt="Makaton Hand" width="250px" height="200px">
 
 </div>
-
-
 </div>
 </div>
-
 
 <footer class="footer">
 
